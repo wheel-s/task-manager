@@ -6,7 +6,7 @@ and breakdoem long-term abmbitions into manageable daily actioons , ensuring eve
 closer to your goal.
 
 ![image alt](https://github.com/wheel-s/task-manager/blob/main/src/assets/img.png?raw=true)
-
+![image alt](https://github.com/wheel-s/task-manager/blob/main/src/assets/img3.png?raw=true)
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
