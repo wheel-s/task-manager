@@ -2,7 +2,7 @@
 
 
 Your simple daily guide to achieving somewhat big-goals. This app to help guide 
-and breakdoem long-term abmbitions into manageable daily actioons , ensuring every task help you get 
+and breakdown long-term ambitions into manageable daily actions , ensuring every task help you get 
 closer to your goal.
 
 ![image alt](https://github.com/wheel-s/task-manager/blob/main/src/assets/img.png?raw=true)
