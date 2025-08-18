@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# task-manager
 
 
 Your simple daily guide to achieving somewhat big-goals. This app to help guide 
