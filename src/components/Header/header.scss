@@ -1,0 +1,185 @@
+.lefts{
+  margin-left: 5.7rem;
+     display:grid;
+   justify-content: center;
+}
+.fam{
+  font-family: 'La Belle Aurore';
+  color: white;
+  height: auto;
+  width: 11rem;
+  margin-left: 3rem;
+  opacity: 0;
+  animation: rotateIn 1s linear both;
+  animation-delay: 1s;
+
+  &::before{
+    content: '<h1>';
+    font-family: 'La Belle Aurore';
+    color:hsl(51, 100%, 50%);
+    font-size: 18px;
+    position: absolute;
+   margin-top: -1rem;
+   opacity: .6;
+  }
+  &::after{
+    content: '<h1/>';
+    font-family: 'La Belle Aurore';
+    color:hsl(51, 100%, 50%);
+    font-size: 18px;
+    position: absolute;
+   margin-top: 1rem;
+   animation: fadeIn 1s 1.7s backwards;
+   opacity: 0.6;
+  }
+
+}
+.letters {
+ font-family: "Edu VIC WA NT Hand", cursive;
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn 1s 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+  margin-left:2px ;
+  
+}
+.letters-hover{
+  font-family: "Merienda", cursive;
+  min-width: 10px;
+  display: inline block;
+  animation-fill-mode: both;
+    margin-left:2px ;
+  &:hover{
+    animation: rubberBand 1s;
+    color: #ffd700;
+  }
+}
+@for $i from 1 through 35{
+  .letters._#{$i}{
+    animation-delay:#{$i/8}s;
+  }
+}
+
+.cube{
+  margin-top: 3rem;
+  margin-left: 3rem;
+  width: 50%;
+  
+  
+}
+.spinner{
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0;
+  margin-left: calc(50% - 100px);
+
+}
+
+.face1{
+  transform: translateZ(100px);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #ccc;
+  background: rgba(225, 225, 225, 0.4);
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0px  lightyellow;
+}
+.face2{
+    transform: rotateY(90deg) translateZ(100px);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background: rgba(225, 225, 225, 0.4);
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0px  lightyellow;
+
+}
+.face3{
+    transform:rotateY(90deg) rotateX(90deg) translateZ(100px);
+    position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background: rgba(225, 225, 225, 0.4);
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0px  lightyellow;
+
+}
+.face4{
+  transform: rotateY(180deg)   rotateZ(90deg)   translateZ(100px);
+      position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background: rgba(225, 225, 225, 0.4);
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0px  lightyellow;
+}
+.face5{
+  transform:rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background: rgba(225, 225, 225, 0.4);
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0px  lightyellow;
+ 
+}
+.face6{
+ 
+  transform:  rotateX(-90deg) translateZ(100px);
+
+  width: 200px;
+  height: 150px;
+  border: 1px solid #ccc;
+  background: rgba(225, 225, 225, 0.4);
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0px  lightyellow;
+ 
+}
+@keyframes spincube{
+  from,
+  to{
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16%{
+    transform: rotateY(-90deg);
+  }
+  33%{
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  58% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66%{
+    transform: rotateY(-270deg) rotateZ(90deg);
+  }
+  83%{
+    transform: rotateX(90deg);
+  }
+}

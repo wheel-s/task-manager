@@ -1,0 +1,95 @@
+
+
+.up{
+align-items: center;
+display: flex;
+justify-self: center;
+justify-content: center;
+margin-top:-12rem;
+margin-bottom: 3rem;
+}
+.lefts{
+  font-family: "Edu VIC WA NT Hand", cursive;
+  color:gray;
+  
+  
+}
+.displays{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    margin-right: 1rem;
+  
+    input{
+        width: 7.6rem;
+        border-radius: .5rem;
+        text-align: start;
+        padding-left: .4rem;
+        height: 2.5rem;
+        background:hsl(201, 74%, 26%);
+    }
+}
+.sub{
+  margin-left: -1rem;
+  display: block;
+    input{
+        border-radius: .5rem;
+        height: 3rem;
+        padding-left: .5rem;
+        background: hsl(201, 74%, 26%);
+
+    }
+}
+.text{
+  margin-left: -1rem;
+  display: block;
+    textarea{
+        background:hsl(201, 74%, 26%);
+        border-radius: .5rem;
+        height: 6rem;
+        width: 15rem;
+        padding-left: 1rem;
+        margin-bottom: .3rem;
+
+    }
+}
+.btn{
+    color: hsl(210, 26%, 89%);
+    background: hsl(220, 20%, 30%);
+    font: 11px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 7px 10px;
+    border: 1px solid hsl(86, 70%, 80%);
+    float:right;
+    margin-right: 1.3rem;
+    border-radius: 4px;
+    &:hover{
+    background-color:hsl(220, 20%, 30%) ;
+    color: white;
+    }
+}
+@media (min-width:40em) {
+  .lefts{
+  top: -17rem;
+  }
+  .displays{
+    input{
+        width: 13rem;
+        height: 3rem;
+    }
+    
+  }
+  .sub{
+    input{
+     width: 26em;
+     height: 3rem;
+    }
+  }
+  .text{
+    textarea{
+      width: 26rem;
+      height: 6rem;
+    }
+  }
+ }
