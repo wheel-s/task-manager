@@ -89,8 +89,8 @@ const Smart:React.FC<props> = ({ setdetails}) => {
     
      <div className='grid justify-center mt-5'>
       
-          <div  className='' >
-           {responses.map((w)=>{return( <p className='bg-blue-300 w-[17rem] rounded-md p-3 mb-5 text-[.9rem] ring-[1px] ring-slate-600'>{w}</p>)})}
+          <div  className='show' >
+           {responses.map((w)=>{return( <p className='bg-blue-300 w-[17rem] rounded-md p-3 mb-5 text-[.9rem] ring-[1px] ring-slate-600 show'>{w}</p>)})}
           </div>
        
       </div>

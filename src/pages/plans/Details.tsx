@@ -38,8 +38,8 @@ const Details:React.FC<props> = ({details}) => {
   return (
     <div>
 
-       <div  className='p-4 mt-5 text-center mb-9' >
-         <ReactMarkdown>{responses}</ReactMarkdown>
+       <div  className='p-4 mt-5 text-center mb-9 show' >
+         <ReactMarkdown >{responses}</ReactMarkdown>
        </div>
 
     </div>
