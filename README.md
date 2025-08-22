@@ -16,6 +16,6 @@ closer to your goal.
 
 # Demo
 
-![demo alt](https://github.com/wheel-s/task-manager/blob/main/demo.gif?raw=true)
+![demo alt](https://github.com/wheel-s/task-manager/blob/main/src/assets/img.png?raw=true)
 ![image alt](https://github.com/wheel-s/task-manager/blob/main/src/assets/img3.png?raw=true)
 
