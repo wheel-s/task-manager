@@ -1,6 +1,6 @@
 
 
-const url = 'http://localhost:5000/api/v1/todo'
+const url = 'https://task-backend-rosy.vercel.app/api/v1/todo'
 
 const addTask = async(value:string, token:string)=>{
   try{

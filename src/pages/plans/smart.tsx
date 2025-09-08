@@ -51,7 +51,7 @@ const Smart:React.FC<props> = ({ setdetails}) => {
          try{
            const goal = JSON.stringify({name:updatedCon})
           const response = await  
-            fetch(`http://localhost:5000/api/v1/model/chat`,{
+            fetch(`https://task-backend-rosy.vercel.app/api/v1/model/chat`,{
               method:'POST',
               headers:{'Content-Type':'application/json'}, 
               body:goal

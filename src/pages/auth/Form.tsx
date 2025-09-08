@@ -54,7 +54,7 @@ const Form:React.FC<props>  = ({SetNav})=> {
    }
   return (
     <div  className='flex justify-center mt-[7rem]  max-md:mt-[4rem]'>
-      <div className='shadow-lg ring-2 bg-gray-300 ring-slate-300 w-[25rem]  px-8 py-5 rounded-[15px] mb-10 max-md:w-[21rem]' >
+      <div className='shadow-lg ring-2 bg-neutral-100 ring-stone-100 w-[25rem]  px-8 py-5 rounded-[15px] mb-10 max-md:w-[21rem]' >
       <div className='flex '>
         <h1 className='text-center text-[1.5rem] text-gray-600 font-serif'>Welcome to Task-Manager 👾</h1>
         <img src={edit} alt={'remove'} width={40} className='mb-10'/>
@@ -74,7 +74,7 @@ const Form:React.FC<props>  = ({SetNav})=> {
         <label className='block  text-gray-600'>Password</label>
         <input type='password' placeholder='Enter your password' className='rounded-md w-full h-10 p-2 ring-1 ring-gray-400' value={password} onChange={(e)=>{setpassword(e.target.value)}}/>
        
-        <input type='checkbox'className='rounded-md w-6 h-4  mt-5 mr-2'  />
+        <input type='checkbox'className='rounded-md w-6 h-4  mt-5 mr-2 tbg-gray-100'  />
          <label className=' text-gray-600' >Remember me</label>
          <p className='text-center mt-3 text-purple-500'>{Msg}</p>
         <button className=' flex my-4 rounded-lg bg-purple-900 px-[5rem]  py-2 text-white max-md:ml-[1.7rem] md:ml-[5rem] ' onClick={submitHandler}>{logs === 'login'?'Login':'SignUp'}</button>
