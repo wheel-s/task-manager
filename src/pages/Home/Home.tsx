@@ -29,12 +29,7 @@ const Home: React.FC<props>= ({add, setAdd, cart, setCategories}) => {
 
     const [Tasks, setTasks] = useState<todo[]>([])
     const [change, setchange] = useState<string>("add")
-    const users = localStorage.getItem('user')
-  let name
-    if (users){
-      const data = JSON.parse(users)
-      name =data.user
-    }
+ const users = localStorage.getItem('user')
     const notDone=async():Promise<void>=>{
       
        if(cart!=="" && users){
