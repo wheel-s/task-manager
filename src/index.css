@@ -72,6 +72,18 @@ a.active{
     translate: 0 -8vh;
   }
 }
+.shows{    
+  
+  animation: slideInLeft 1s  backwards;
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  transition-duration: 1s;
+  @starting-style{
+    opacity: 0;
+    translate: 0 -8vh;
+  }
+}
 
 
 .animate{

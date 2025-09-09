@@ -20,7 +20,7 @@ const Sides:React.FC<props> = ({set, setNav, cart, categories,}) => {
  const navigate = useNavigate()
   const show=():void=>{
     const id = document.querySelector('#id')
-    id?.classList.toggle('show')
+    id?.classList.toggle('shows')
     
   }
  
@@ -49,7 +49,7 @@ const Sides:React.FC<props> = ({set, setNav, cart, categories,}) => {
              <p className='mt-2 ml-2 text-[17px] text-[#3d3d5c]'>categories</p>
              <img src={arrow} alt={'img'} width={30} height={20} className='rotate-[90deg] mt-1 ml-1'/>
           </div>
-           <div className='ml-10 mt-2 cursor-pointer hide' id='id'>
+           <div className='ml-10  mt-13 cursor-pointer hide' id='id'>
               <p onClick={()=>{cart("")
                    set(false)}} className='text-[#3d3d5c]'><span className=' rounded-md mb-2 bg-blue-300 mr-1 px-[9px]'></span>All</p>
              {
@@ -63,7 +63,7 @@ const Sides:React.FC<props> = ({set, setNav, cart, categories,}) => {
              
            </div>
         </section>
-         <NavLink to={'plans'} className='flex mt-6' onClick={()=>set(false)}>
+         <NavLink to={'plans'} className='flex mt-[2rem]' onClick={()=>set(false)}>
            <img src={goal} alt={'img'} width={39} />
            <p className='mt-2 ml-2 text-[17px] text-[#3d3d5c]'>smart goals</p>
         </NavLink>

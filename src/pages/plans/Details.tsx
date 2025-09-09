@@ -38,7 +38,7 @@ const Details:React.FC<props> = ({details}) => {
   return (
     <div>
 
-       <div  className='p-4 mt-5 text-center mb-9 show ovreflowx-hidden' >
+       <div  className='p-4 mt-5 text-center mb-9 show ovreflow-hidden' >
          <ReactMarkdown >{responses}</ReactMarkdown>
        </div>
 
