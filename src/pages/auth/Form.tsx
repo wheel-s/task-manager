@@ -8,7 +8,7 @@ interface props{
   SetNav:React.Dispatch<React.SetStateAction<boolean>>
 }
 const Form:React.FC<props>  = ({SetNav})=> {
-  const [logs, setlogs] = useState<string>('login') 
+  const [logs, setlogs] = useState<string>('signUp') 
   const [userName, setuserName] = useState<string>("")
   const [email, setemail] = useState<string>("")
   const [password, setpassword] = useState<string>("")
