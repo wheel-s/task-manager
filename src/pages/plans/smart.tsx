@@ -83,13 +83,13 @@ const Smart:React.FC<props> = ({ setdetails}) => {
 
       <div className='grid justify-center mt-5'>
        <p className='mb-5 text-[1.1em] text-[#3d3d5c] '>Turn your goals into attainable plans</p> 
-       <button className='bg-gray-800 rounded-lg px-20 py-[5px] text-white text-xl cursor-pointer' onClick={Start}>Start</button>
+       <button className='bg-gray-800 rounded-lg px-20 py-[8px] text-white text-xl cursor-pointer' onClick={Start}>Start</button>
        
       </div>
     
      <div className='grid justify-center mt-5'>
       
-          <div  className='show' >
+          <div  className='' >
            {responses.map((w)=>{return( <p className='bg-blue-300 w-[17rem] rounded-md p-3 mb-5 text-[.9rem] ring-[1px] ring-slate-600 show'>{w}</p>)})}
           </div>
        

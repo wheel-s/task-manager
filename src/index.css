@@ -63,12 +63,10 @@ a.active{
   transition-behavior: allow-discrete;
 }
 .show{    
+   animation: fadeInUp 1s  backwards;
   visibility: visible;
-  animation: fadeInUp 1s;
   opacity: 1;
-  display:block;
-  translate: 0 0;
-  transition-duration: .9s;
+  transition-duration: 1s;
   @starting-style{
     opacity: 0;
     translate: 0 -8vh;
