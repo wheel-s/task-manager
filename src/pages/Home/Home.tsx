@@ -4,6 +4,7 @@ import { addTask, deleteTask, editTask,  showTask, showTaskCategory } from '../a
 import Single from './Single-Task'
 import Create from '../Add/Create'
 import more from '../../assets/add.png'
+import { data } from 'react-router-dom'
 
 
 
@@ -29,8 +30,11 @@ const Home: React.FC<props>= ({add, setAdd, cart, setCategories}) => {
     const [Tasks, setTasks] = useState<todo[]>([])
     const [change, setchange] = useState<string>("add")
     const users = localStorage.getItem('user')
-
-    
+  let name
+    if (users){
+      const data = JSON.parse(users)
+      name =data.user
+    }
     const notDone=async():Promise<void>=>{
       
        if(cart!=="" && users){
@@ -189,10 +193,10 @@ const Home: React.FC<props>= ({add, setAdd, cart, setCategories}) => {
 
  return (
     <div >
-      
-      <h1 className=' text-center text-[#3d3d5c] text-xl'>Your Tasks</h1>
+       
+      <h1 className=' text-center text-[#3d3d5c] text-xl'> Your Tasks</h1>
 
-      <div className='flex justify-between mb-5 mt-6'>
+      <div className='flex justify-between mb-8 mt-6'>
          <h1 className='ml-5 text-xl text-[#3d3d5c]'>Tasks</h1>
          <div className='flex mr-1 md:mr-8'>
           <p className='mr-2 bg-slate-200 rounded-md px-3 h-6 text-gray-500 ring-1 ring-slate-400 cursor-pointer' onClick={All}>All</p>

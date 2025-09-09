@@ -34,7 +34,7 @@ const single:React.FC<props> = ({todo, ondelete, done, edits}) => {
               
              <p  className=''>{todo.todo}</p>
              <div className='flex'>
-              <span className=' rounded-full bg-blue-900 mr-1 w-3 h-3 flex mt-[7.5px]'> </span>
+              <span className=' rounded-full bg-blue-900 mr-1 w-3 h-3 flex mt-[7px]'> </span>
               <p className='max-sm:text-[.85rem]'>{todo.categoory}</p>
              </div>
 
