@@ -32,10 +32,10 @@ const single:React.FC<props> = ({todo, ondelete, done, edits}) => {
           <div className= 'flex justify-between bg-gray-300 rounded-[5px] w-[30rem] px-5 py-1 max-md:w-[18rem]'>
             <div className={todo.completed? 'strike':'none'}>
               
-             <p  className='max-sm:text-[.85rem]'>{todo.todo}</p>
+             <p  className=''>{todo.todo}</p>
              <div className='flex'>
               <span className=' rounded-full bg-blue-900 mr-1 w-3 h-3 flex mt-[7.5px]'> </span>
-              <p>{todo.categoory}</p>
+              <p className='max-sm:text-[.85rem]'>{todo.categoory}</p>
              </div>
 
              <p className='max-sm:text-[.85rem]'>{todo.date}</p>
