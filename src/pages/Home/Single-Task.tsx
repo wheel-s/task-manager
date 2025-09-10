@@ -21,7 +21,8 @@ const single:React.FC<props> = ({todo, ondelete, done, edits}) => {
 
 
   return (
-   <div className='animate'>
+   <div 
+   className='animate'>
       <section className='flex justify-center mt-3 text-gray-600 '>
        
          <div className='flex'>

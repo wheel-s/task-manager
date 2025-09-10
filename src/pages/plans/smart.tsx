@@ -75,7 +75,7 @@ const Smart:React.FC<props> = ({ setdetails}) => {
       <div className='grid justify-center mt-10'>
       
           <div  className='' >
-           {msg.map((item)=>{return( <p  className='bg-gray-400 w-[17rem] rounded-md p-3 mb-5 ring-[1px] ring-slate-600'>{item}</p>)})}
+           {msg.map((item)=>{return( <p  key={item} className='bg-gray-400 w-[17rem] rounded-md p-3 mb-5 ring-[1px] ring-slate-600'>{item}</p>)})}
           </div>
          <input className='rounded-md mb-2 w-[16rem] h-10 p-2 ring-[1.3px] ring-slate-900' value={input} onChange={(e)=>setinput(e.target.value)  }/>
       </div>
@@ -90,7 +90,7 @@ const Smart:React.FC<props> = ({ setdetails}) => {
      <div className='grid justify-center mt-5'>
       
           <div  className='' >
-           {responses.map((w)=>{return( <p className='bg-blue-300 w-[17rem] rounded-md p-3 mb-5 text-[.9rem] ring-[1px] ring-slate-600 show'>{w}</p>)})}
+           {responses.map((w)=>{return( <p key={w}className='bg-blue-300 w-[17rem] rounded-md p-3 mb-5 text-[.9rem] ring-[1px] ring-slate-600 show'>{w}</p>)})}
           </div>
        
       </div>

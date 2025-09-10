@@ -7,8 +7,8 @@ interface props{
 
 const Header:React.FC<props> = ({set}) => {
 
-      const users = localStorage.getItem('user')
-  let name
+  const users = localStorage.getItem('user')
+  let name = 'welcone'
     if (users){
       const data = JSON.parse(users)
       name =data.user

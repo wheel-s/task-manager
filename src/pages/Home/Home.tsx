@@ -27,6 +27,7 @@ interface todo{
 const Home: React.FC<props>= ({add, setAdd, cart, setCategories}) => {
 
     const [Tasks, setTasks] = useState<todo[]>([])
+    const [updatedTask, setupdatedTask] =useState<todo[]>([])
     const [change, setchange] = useState<string>("add")
     const users = localStorage.getItem('user')
 
@@ -201,9 +202,14 @@ const Home: React.FC<props>= ({add, setAdd, cart, setCategories}) => {
          </div>
       </div>
 
+ 
+        { Tasks.map((item)=>{return(
+          <div >
+          <Single key={item._id} todo={item} ondelete={ handleDelete} done={done} edits={edit}/></div>)})}
       
-       { Tasks.map((item)=>{return(<Single key={item._id} todo={item} ondelete={ handleDelete} done={done} edits={edit}/>)})}
+
       
+     
   
       
       <section className='flex justify-center cursor-pointer mt-10 mb-10 animate' onClick={()=>{setAdd(true)

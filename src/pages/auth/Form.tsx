@@ -8,7 +8,7 @@ interface props{
   SetNav:React.Dispatch<React.SetStateAction<boolean>>
 }
 const Form:React.FC<props>  = ({SetNav})=> {
-  const [logs, setlogs] = useState<string>('signUp') 
+  const [logs, setlogs] = useState<string>('login') 
   const [userName, setuserName] = useState<string>("")
   const [email, setemail] = useState<string>("")
   const [password, setpassword] = useState<string>("")
@@ -70,14 +70,14 @@ const Form:React.FC<props>  = ({SetNav})=> {
         
        </>)}
         <label className='block  text-gray-600'>Email</label>
-        <input type='text' placeholder='Enter your email' className='rounded-md w-full mb-2 h-10 p-2 ring-1 ring-gray-400' value={email} onChange={(e)=>{setemail(e.target.value)}}/>
+        <input type='text' placeholder='Enter your email'id='email' className='rounded-md w-full mb-2 h-10 p-2 ring-1 ring-gray-400' value={email} onChange={(e)=>{setemail(e.target.value)}}/>
         <label className='block  text-gray-600'>Password</label>
-        <input type='password' placeholder='Enter your password' className='rounded-md w-full h-10 p-2 ring-1 ring-gray-400' value={password} onChange={(e)=>{setpassword(e.target.value)}}/>
+        <input type='password' placeholder='Enter your password' id='password' className='rounded-md w-full h-10 p-2 ring-1 ring-gray-400' value={password} onChange={(e)=>{setpassword(e.target.value)}}/>
        
         <input type='checkbox'className='rounded-md w-6 h-4  mt-5 mr-2 tbg-gray-100'  />
          <label className=' text-gray-600' >Remember me</label>
          <p className='text-center mt-3 text-purple-500'>{Msg}</p>
-        <button className=' flex my-4 rounded-lg bg-purple-900 px-[5rem]  py-2 text-white max-md:ml-[1.7rem] md:ml-[5rem] ' onClick={submitHandler}>{logs === 'login'?'Login':'SignUp'}</button>
+        <button id='login-button'className=' flex my-4 rounded-lg bg-purple-900 px-[5rem]  py-2 text-white max-md:ml-[1.7rem] md:ml-[5rem] ' onClick={submitHandler}>{logs === 'login'?'Login':'SignUp'}</button>
       </form>
       
        <p className='text-center text-gray-600'>{logs === 'login'?'Dont have an account' : 'Already have an account'}
