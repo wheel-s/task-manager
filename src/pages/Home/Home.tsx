@@ -27,7 +27,6 @@ interface todo{
 const Home: React.FC<props>= ({add, setAdd, cart, setCategories}) => {
 
     const [Tasks, setTasks] = useState<todo[]>([])
-    const [updatedTask, setupdatedTask] =useState<todo[]>([])
     const [change, setchange] = useState<string>("add")
     const users = localStorage.getItem('user')
 
