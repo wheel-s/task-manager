@@ -1,5 +1,4 @@
 import React from 'react'
-import settings from '../../assets/menu.png'
 import setting from '../../assets/settings.png'
 
 

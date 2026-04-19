@@ -16,7 +16,6 @@ const App:React.FC = ()=> {
 
   const [nav, setNav] = useState<boolean>(true)  
 
-  const[ categories, setCategories]= useState<string[] >([])
   const[details, setdetails] = useState<string[][]>([])
   useEffect(()=>{
     if(window.location.pathname==='/'){

@@ -102,7 +102,7 @@ const Home: React.FC<props>= () => {
         const show = await showTask(data.token)
           if(show){
             setTasks(show)     
-            setCategories(show.map(item=>String(item.categoory.toLowerCase())))
+            setCategories(show.map((item:{categoory:string})=>String(item.categoory.toLowerCase())))
           }    
             
         // console.log(show[0].categoory)
