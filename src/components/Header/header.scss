@@ -1,8 +1,36 @@
 .lefts{
+  
   margin-left: 5.7rem;
      display:grid;
    justify-content: center;
 }
+
+
+.hides{
+  display:none;
+  opacity: 0;
+  translate: 0 -8vh;
+  transition-property:  display opacity  overlay;
+  transition-duration: .7s;
+  transition-behavior: allow-discrete;
+   /* animation: fadeOutUp .7s  backwards; */
+    @starting-style{
+    opacity: 0;
+    translate: 0 vh;
+  }
+}
+.shown{    
+   animation: fadeInDown .7s  backwards;
+  visibility: visible;
+  opacity: 1;
+  transition-duration: 1s;
+  display: block;
+  @starting-style{
+    opacity: 0;
+    translate: 0 -2vh;
+  }
+}
+
 .fam{
   font-family: 'La Belle Aurore';
   color: white;
@@ -55,131 +83,131 @@
     color: #ffd700;
   }
 }
-@for $i from 1 through 35{
-  .letters._#{$i}{
-    animation-delay:#{$i/8}s;
-  }
-}
+// @for $i from 1 through 35{
+//   .letters._#{$i}{
+//     animation-delay:#{$i/8}s;
+//   }
+// }
 
-.cube{
-  margin-top: 3rem;
-  margin-left: 3rem;
-  width: 50%;
+// .cube{
+//   margin-top: 3rem;
+//   margin-left: 3rem;
+//   width: 50%;
   
   
-}
-.spinner{
-  animation-name: spincube;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 12s;
-  transform-style: preserve-3d;
-  transform-origin: 100px 100px 0;
-  margin-left: calc(50% - 100px);
+// }
+// .spinner{
+//   animation-name: spincube;
+//   animation-timing-function: ease-in-out;
+//   animation-iteration-count: infinite;
+//   animation-duration: 12s;
+//   transform-style: preserve-3d;
+//   transform-origin: 100px 100px 0;
+//   margin-left: calc(50% - 100px);
 
-}
+// }
 
-.face1{
-  transform: translateZ(100px);
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border: 2px solid #ccc;
-  background: rgba(225, 225, 225, 0.4);
-  font-size: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 20px 0px  lightyellow;
-}
-.face2{
-    transform: rotateY(90deg) translateZ(100px);
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border: 1px solid #ccc;
-  background: rgba(225, 225, 225, 0.4);
-  font-size: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 20px 0px  lightyellow;
+// .face1{
+//   transform: translateZ(100px);
+//   position: absolute;
+//   width: 200px;
+//   height: 200px;
+//   border: 2px solid #ccc;
+//   background: rgba(225, 225, 225, 0.4);
+//   font-size: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   box-shadow: 0 0 20px 0px  lightyellow;
+// }
+// .face2{
+//     transform: rotateY(90deg) translateZ(100px);
+//   position: absolute;
+//   width: 200px;
+//   height: 200px;
+//   border: 1px solid #ccc;
+//   background: rgba(225, 225, 225, 0.4);
+//   font-size: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   box-shadow: 0 0 20px 0px  lightyellow;
 
-}
-.face3{
-    transform:rotateY(90deg) rotateX(90deg) translateZ(100px);
-    position: absolute;
-  width: 200px;
-  height: 200px;
-  border: 1px solid #ccc;
-  background: rgba(225, 225, 225, 0.4);
-  font-size: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 20px 0px  lightyellow;
+// }
+// .face3{
+//     transform:rotateY(90deg) rotateX(90deg) translateZ(100px);
+//     position: absolute;
+//   width: 200px;
+//   height: 200px;
+//   border: 1px solid #ccc;
+//   background: rgba(225, 225, 225, 0.4);
+//   font-size: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   box-shadow: 0 0 20px 0px  lightyellow;
 
-}
-.face4{
-  transform: rotateY(180deg)   rotateZ(90deg)   translateZ(100px);
-      position: absolute;
-  width: 200px;
-  height: 200px;
-  border: 1px solid #ccc;
-  background: rgba(225, 225, 225, 0.4);
-  font-size: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 20px 0px  lightyellow;
-}
-.face5{
-  transform:rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border: 1px solid #ccc;
-  background: rgba(225, 225, 225, 0.4);
-  font-size: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 20px 0px  lightyellow;
+// }
+// .face4{
+//   transform: rotateY(180deg)   rotateZ(90deg)   translateZ(100px);
+//       position: absolute;
+//   width: 200px;
+//   height: 200px;
+//   border: 1px solid #ccc;
+//   background: rgba(225, 225, 225, 0.4);
+//   font-size: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   box-shadow: 0 0 20px 0px  lightyellow;
+// }
+// .face5{
+//   transform:rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+//   position: absolute;
+//   width: 200px;
+//   height: 200px;
+//   border: 1px solid #ccc;
+//   background: rgba(225, 225, 225, 0.4);
+//   font-size: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   box-shadow: 0 0 20px 0px  lightyellow;
  
-}
-.face6{
+// }
+// .face6{
  
-  transform:  rotateX(-90deg) translateZ(100px);
+//   transform:  rotateX(-90deg) translateZ(100px);
 
-  width: 200px;
-  height: 150px;
-  border: 1px solid #ccc;
-  background: rgba(225, 225, 225, 0.4);
-  font-size: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 20px 0px  lightyellow;
+//   width: 200px;
+//   height: 150px;
+//   border: 1px solid #ccc;
+//   background: rgba(225, 225, 225, 0.4);
+//   font-size: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   box-shadow: 0 0 20px 0px  lightyellow;
  
-}
-@keyframes spincube{
-  from,
-  to{
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  }
-  16%{
-    transform: rotateY(-90deg);
-  }
-  33%{
-    transform: rotateY(-90deg) rotateZ(90deg);
-  }
-  58% {
-    transform: rotateY(-180deg) rotateZ(90deg);
-  }
-  66%{
-    transform: rotateY(-270deg) rotateZ(90deg);
-  }
-  83%{
-    transform: rotateX(90deg);
-  }
-}
+// }
+// @keyframes spincube{
+//   from,
+//   to{
+//     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+//   }
+//   16%{
+//     transform: rotateY(-90deg);
+//   }
+//   33%{
+//     transform: rotateY(-90deg) rotateZ(90deg);
+//   }
+//   58% {
+//     transform: rotateY(-180deg) rotateZ(90deg);
+//   }
+//   66%{
+//     transform: rotateY(-270deg) rotateZ(90deg);
+//   }
+//   83%{
+//     transform: rotateX(90deg);
+//   }
+// }

@@ -11,12 +11,26 @@
   margin: 0;
   font-family:'Helvetica Neue';
 
-  background: hsla(0, 0%, 90%, 1);
+  background: hsla(0, 0%, 90%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+
+.active1{
+@apply bg-blue-950 text-white font-semibold px-8 py-1.5 -ml-3.5 rounded-l-xl -mt-1.5 h-9
+
+}
+.active2{
+@apply bg-blue-950 text-white font-semibold px-8 py-1.5 -ml-3.5 -mt-1.5 h-9
+
+}
+.active3{
+@apply bg-blue-950  text-white font-semibold px-4 py-1.5   rounded-r-lg  -mt-1.5 h-9
+
 }
 
 
@@ -40,9 +54,14 @@
 }
 
 a.active{
-  background-color: hsl(0, 0%, 60%, 0.8);
-  width: 9rem;
-  padding: .2rem;
+  background-color: hsl(225,24%,29%);
+  color:white;
+  -webkit-text-fill-color: white;
+  width: 10rem;
+  padding:.2rem;
+  padding-top :.2rem;
+  padding-bottom: .3rem;
+  
   margin-left: .7rem;
   border-radius: 6px;
 }
@@ -61,15 +80,21 @@ a.active{
   transition-property:  display opacity  overlay;
   transition-duration: .7s;
   transition-behavior: allow-discrete;
+ 
+    @starting-style{
+    opacity: 0;
+    translate: 0 vh;
+  }
 }
 .show{    
-   animation: fadeInUp 1s  backwards;
+   animation: fadeInDown .7s  backwards;
   visibility: visible;
   opacity: 1;
-  transition-duration: 1s;
+  transition-duration: .7s;
+  display: block;
   @starting-style{
     opacity: 0;
-    translate: 0 -8vh;
+    translate: 0 -3vh;
   }
 }
 .shows{    
@@ -97,3 +122,6 @@ a.active{
   }
 
 }
+
+
+

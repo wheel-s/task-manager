@@ -1,12 +1,26 @@
+.glass2{
+  background-color: hsla(210, 80%, 7%, .6);
+  border:  1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rbgba(0,0,0,0.1);
+  color:#f8f8f8;
+    display: fixed;
+  z-index: 30;
 
+  width: 80%;
+  height: 60vh;
+  overflow: hidden;
+}
 
 .up{
-align-items: center;
-display: flex;
-justify-self: center;
-justify-content: center;
-margin-top:-12rem;
-margin-bottom: 3rem;
+  margin-top: -5rem;
+
+  align-items: center;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  margin-top:-20rem;
+  margin-bottom: 3rem;
 }
 .lefts{
   font-family: "Edu VIC WA NT Hand", cursive;
@@ -57,10 +71,10 @@ margin-bottom: 3rem;
     color: hsl(210, 26%, 89%);
     background: hsl(220, 20%, 30%);
     font: 11px;
-    letter-spacing: 2px;
+    letter-spacing: .5px;
     text-decoration: none;
     padding: 7px 10px;
-    border: 1px solid hsl(86, 70%, 80%);
+    
     float:right;
     margin-right: 1.3rem;
     border-radius: 4px;
